@@ -1,0 +1,12 @@
+### Test Create via Local BAS Client
+POST http://localhost:4004/odata/v4/orderservice/SalesOrders
+Content-Type: application/json
+
+{
+  "orderNumber": "SO-2026-001",
+  "customer": "John Doe",
+  "Items": [
+    { "product": "Mouse", "quantity": 1, "price": 25.00 },
+    { "product": "Keyboard", "quantity": 1, "price": 75.00 }
+  ]
+}
